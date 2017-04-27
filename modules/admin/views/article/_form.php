@@ -14,7 +14,7 @@ use yii\widgets\ActiveForm;
 
     <?= $form->field($model, 'title')->textInput(['maxlength' => true]) ?>
 
-    <?= $form->field($model, 'category_id')->dropDownList(['1' => 'Moon', '2' => 'Sun']) //make it good!!!! ?>
+    <?= $form->field($model, 'category_id')->dropDownList($categories) //make it good!!!! ?>
 
     <?= $form->field($model, 'description')->textarea(['rows' => 6]) ?>
 
